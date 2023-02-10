@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script>
+       function changeflavor() {
+        var selectedTime = document.getElementById("dove").value;
+       
+        document.getElementById("milk-chocolate-menu").style.display="none";
+        document.getElementById("dark-chocolate-menu").style.display="none";
+         document.getElementById("carmel-menu").style.display="none";
+         
+         if(selectedTime == "milk")
+        {
+           document.getElementById("milk-chocolate-menu").style.display="block"; 
+        }
+        else if(selectedTime == "dark"){
+            document.getElementById("dark-chocolate-menu").style.display="block";
+        }
+        else if(selectedTime == "carmel"){
+            document.getElementById("carmel-menu").style.display="block";
+        }
+      
+      }
+
+    </script>
+</head>
+<body class="ncimg">
+    <div class="npage text-white">
+    <h1 class="middle">naomis candy stand</h1>
+    <hr>
+    <p>welcome to me and my freinds candy stand</p>
+    <p>here is our menu</p>
+    <article>
+       <p class="flavor">milkyway</p><p class="price">20¢</p>
+      </article>
+      <article>
+        <p class="flavor">smarties </p><p class="price">60¢</p>
+      </article>
+      <article>
+        <p class="flavor">tootsie rolls </p><p class="price">50¢</p>
+      </article>
+      <article>
+        <p class="flavor">gum</p><p class="price">1$</p>
+      </article>
+      <article>
+        <p class="flavor">twix</p><p class="price">50¢</p>
+      </article>
+      <article>
+        <p class="flavor">kinder bruno </p><p class="price">70¢</p>
+      </article>
+      <article>
+        <p class="flavor">lolli pop </p><p class="price">1$</p>
+      </article>
+      <article>
+        <p class="flavor">jolly rancher </p><p class="price">50¢ </p>
+      </article>
+      <article>
+        <p class="flavor">recces </p><p class="price">50¢</p>
+      </article>
+      <label for="dove-candy">what dove flavor do you want?</label>
+
+        <select name="dove-candy" id="dove" onchange="changeflavor()">
+            <option value="" selected disabled hidden>-Select dove flavor-</option>
+            <option value="milk">milk chocolate</option>
+            <option value="dark">dark chocolate</option>
+            <option value="carmel">carmel</option></select>
+
+
+
+            <div id="milk-chocolate-menu">
+              <article>
+                <p class="flavor">milk chocolate dove</p><p class="price">50¢</p>
+              </article>
+            </div>
+            <div id="dark-chocolate-menu">
+              <article>
+                <p class="flavor">dark chocolate dove</p><p class="price">70¢</p>
+              </article>
+            </div>
+            <div id="carmel-menu">
+              <article>
+                <p class="flavor">carmel dove</p><p class="price">80¢</p>
+              </article>
+              
+            </div>
+            <p class="middle">EACH</p>
+    </div>
+</body>
