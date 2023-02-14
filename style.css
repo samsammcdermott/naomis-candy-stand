@@ -151,3 +151,10 @@ a {
 #carmel-menu{
     display:none;
 } 
+.candy-pic{
+    height:65px;
+    width: 125px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
